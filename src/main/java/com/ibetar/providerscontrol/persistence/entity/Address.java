@@ -20,12 +20,12 @@ public class Address implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+//    @NotBlank
+//    @Size(min = 3 , max = 50)
     @Column(name = "nombre_calle")
-    @NotBlank
-    @Size(min = 3 , max = 50)
     private String nombreCalle;
 
-    @NotBlank
+//    @NotBlank
     @Column(name = "number")
     private int number;
 
